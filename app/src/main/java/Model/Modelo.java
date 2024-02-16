@@ -57,7 +57,7 @@ public class Modelo {
             else open_now = ("Cerrado");
         }else
         {
-            open_now = "No tiene horario";
+            open_now = "Sin horario";
         }
         //para sacar las photos
         JSONObject JSONlista = null;
@@ -70,7 +70,7 @@ public class Modelo {
             photo_reference = photreferen.getString("photo_reference").toString();
         }else
         {
-            photo_reference = "No tiene foto";
+            photo_reference = "Sin foto";
         }
     }
 

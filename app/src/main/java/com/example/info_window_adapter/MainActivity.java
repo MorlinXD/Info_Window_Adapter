@@ -89,18 +89,27 @@ public class MainActivity extends AppCompatActivity
         Toast.makeText(this, "Cargando restaurantes", Toast.LENGTH_SHORT).show();
         obtenerLugares(defaultLocation, 1500,"restaurant");
     }
-    public void clickBares(View view){
+    public void clickHospital(View view){
         mMap.clear();
         agregarMarcador(defaultLocation, "Universidad Tecnica Estatal de Quevedo");
-        Toast.makeText(this, "Cargando bares", Toast.LENGTH_SHORT).show();
-        obtenerLugares(defaultLocation, 1500,"bar");
+        Toast.makeText(this, "Cargando Hospitales", Toast.LENGTH_SHORT).show();
+        obtenerLugares(defaultLocation, 1500,"hospital");
     }
-    public void clickcafe(View view){
+
+    public void clickGasolinera(View view){
         mMap.clear();
         agregarMarcador(defaultLocation, "Universidad Tecnica Estatal de Quevedo");
-        Toast.makeText(this, "Cargando Cafés", Toast.LENGTH_SHORT).show();
-        obtenerLugares(defaultLocation, 1500,"cafe");
+        Toast.makeText(this, "Cargando Gasolineras", Toast.LENGTH_SHORT).show();
+        obtenerLugares(defaultLocation, 1500,"gas_station");
     }
+    public void clickColegio(View view){
+        mMap.clear();
+        agregarMarcador(defaultLocation, "Universidad Tecnica Estatal de Quevedo");
+        Toast.makeText(this, "Cargando Colegios", Toast.LENGTH_SHORT).show();
+        obtenerLugares(defaultLocation, 1500,"school");
+    }
+
+
     private void obtenerLugares(@NonNull LatLng latLng, double radius, String lugar) {
         // La URL de la API
         String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json" +

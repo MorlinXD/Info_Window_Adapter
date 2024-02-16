@@ -14,8 +14,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
         tools:context=".MainActivity" />
 
     <androidx.appcompat.widget.Toolbar
@@ -83,16 +85,16 @@
 
     <!-- Iconos actualizados con cambios en el color de fondo y disposición -->
     <ImageView
-        android:id="@+id/btBares"
+        android:id="@+id/btHospital"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginEnd="8dp"
         android:background="#B39DDB"
-        android:onClick="clickBares"
+        android:onClick="clickHospital"
         android:padding="8dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/btRestaurant"
-        app:srcCompat="@drawable/bar" />
+        app:srcCompat="@drawable/hospital" />
 
     <ImageView
         android:id="@+id/btRestaurant"
@@ -101,20 +103,32 @@
         android:background="#B39DDB"
         android:onClick="clickRestaurant"
         android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btBares"
-        app:layout_constraintEnd_toStartOf="@+id/btHotel"
+        app:layout_constraintBottom_toBottomOf="@+id/btHospital"
+        app:layout_constraintEnd_toStartOf="@+id/btGasolinera"
         app:srcCompat="@drawable/restaurant" />
 
     <ImageView
-        android:id="@+id/btHotel"
+        android:id="@+id/btGasolinera"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:background="#B39DDB"
-        android:onClick="clickcafe"
+        android:onClick="clickGasolinera"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/btRestaurant"
         app:layout_constraintStart_toEndOf="@+id/btRestaurant"
-        app:srcCompat="@drawable/taza" />
+        app:srcCompat="@drawable/gasolinera" />
+
+    <ImageView
+        android:id="@+id/btColegio"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="#B39DDB"
+        android:onClick="clickColegio"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btGasolinera"
+        app:layout_constraintStart_toEndOf="@+id/btGasolinera"
+        app:srcCompat="@drawable/colegio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

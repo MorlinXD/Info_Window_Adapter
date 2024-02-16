@@ -46,7 +46,6 @@ public class adaptador implements GoogleMap.InfoWindowAdapter {
 
             ImageView image2 = (ImageView)v.findViewById(R.id.imgUsr);
             if (places.photo_reference != null && !places.photo_reference.isEmpty()) {
-                //Glide.with(v).load("https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=" + places.photo_reference + "&key=AIzaSyCx2klhltS0foiCjqvuxh27SV67y_VyZ_w").into(image);
                 Picasso.get().load("https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=" + places.photo_reference + "&key=AIzaSyCx2klhltS0foiCjqvuxh27SV67y_VyZ_w").into(image2);
 
             }
